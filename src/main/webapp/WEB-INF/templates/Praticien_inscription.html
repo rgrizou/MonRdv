@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.nav-link {
+     padding-right: .5rem !important;
+
+   }
+</style>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded">
+<h1 class="text-white">MY-RDV.com</h1>
+
+ <ul class="navbar-nav mr-auto">
+
+
+ </ul>
+ <ul class="navbar-nav ml-auto">
+   <li class="nav-item">
+     <a class="nav-link"><button
+                    type="button" class="btn btn-success">Connexion</button></a>
+   </li>
+   <li class="nav-item">
+     <a class="nav-link"><button
+                    type="button" class="btn btn-success">Inscription</button></a>
+   </li>
+ </ul>
+</nav>
+
+<nav class="navbar navbar-expand-sm navbar-ligth justify-content-center" style="background-color: #e3f2fd;">
+    <ul class="navbar-nav ">
+
+        <li class="nav-item active "><a class="nav-link" href="#"><div
+                    class="btn-group">
+
+                    <button type="button" class="btn btn-success"
+                        style="width: 200px; height: 45px">
+                        <b>Mes RDV</b>
+                    </button>
+                    <button type="button" class="btn btn-success"
+                        style="width: 200px; height: 45px">
+                        <b>Gérer son profil</b>
+                    </button>
+                    <button type="button" class="btn btn-success"
+                        style="width: 200px; height: 45px">
+                        <b>Rechercher un RDV</b>
+                    </button>
+                </div> </a></li>
+</nav>
+<meta charset="ISO-8859-1">
+<title>Inscritpion praticien</title>
+<link rel="stylesheet" type="text/css"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <h2>Inscription praticien</h2>
+  <form action="/action_page.php">
+  <div class="form-group">
+      <label for="nom">Nom</label>
+      <input type="nom" class="form-control" id="nom" placeholder="Nom" name="nom">
+    </div>
+    <div class="form-group">
+      <label for="prenom">Prenom</label>
+      <input type="prenom" class="form-control" id="prenom" placeholder="Prenom" name="prenom">
+    </div>
+    <div class="form-group">
+      <label for="prenom">Specialite</label>
+      <input type="specialite" class="form-control" id="specialite" placeholder="Spécialité" name="specialite">
+    </div>
+    <div class="form-group">
+      <label for="creneau">Durée du créneau (min)</label>
+      <input type="creneau" class="form-control" id="creneau" placeholder="30" name="creneau">
+    </div>
+    <div class="form-group">
+      <label for="prenom">Téléphone</label>
+      <input type="specialite" class="form-control" id="telephone" placeholder="0123456789" name="specialite">
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+    </div>
+  <h4>Adresse</h4>
+   <div class="form-group">
+      <label for="numvoie">N° Voie</label>
+      <input type="numvoie" class="form-control" id="numvoie" placeholder="1" name="numvoie">
+    </div>
+     <div class="form-group">
+      <label for="typevoie">Type voie</label>
+      <input type="typevoie" class="form-control" id="typevoie" placeholder="rue, boulevard..." name="typevoie">
+    </div>
+    <div class="form-group">
+      <label for="code">Code postal</label>
+      <input type="code" class="form-control" id="code" placeholder="00000" name="code">
+    </div>
+    <div class="form-group">
+      <label for="ville">Ville</label>
+      <input type="ville" class="form-control" id="ville" placeholder="Ville" name="ville">
+    </div>
+     <button type="add" class="btn btn-secondary"><i class="fas fa-plus"></i></button>
+     <br/><br/>
+    <button type="submit" class="btn btn-primary">Valider</button>
+    <button type="annuler" class="btn btn-danger">Annuler</button>
+    </form>
+</div>
+</body>
+</html>

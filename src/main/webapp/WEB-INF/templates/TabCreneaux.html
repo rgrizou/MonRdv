@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	border: 1px solid #ddd;
+}
+
+th, td {
+	text-align: left;
+	padding: 8px;
+}
+
+.nav-link {
+	padding-right: .5rem !important;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>Tableau des créneaux</title>
+<link rel="stylesheet" type="text/css"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded">
+	<h1 class="text-white">MY-RDV.com</h1>
+	<ul class="navbar-nav mr-auto">
+	</ul>
+	<ul class="navbar-nav ml-auto">
+		<li class="nav-item"><a class="nav-link"><button
+					type="button" class="btn btn-success">Connexion</button></a></li>
+		<li class="nav-item"><a class="nav-link"><button
+					type="button" class="btn btn-success">Inscription</button></a></li>
+	</ul>
+</nav>
+<nav class="navbar navbar-expand-sm navbar-ligth justify-content-center"
+	style="background-color: #e3f2fd;">
+	<ul class="navbar-nav ">
+		<li class="nav-item active "><a class="nav-link" href="#">
+				<div class="btn-group">
+					<button type="button" class="btn btn-success"
+						style="width: 200px; height: 45px">
+						<b>Mes RDV</b>
+					</button>
+					<button type="button" class="btn btn-success"
+						style="width: 200px; height: 45px">
+						<b>Gérer son profil</b>
+					</button>
+					<button type="button" class="btn btn-success"
+						style="width: 200px; height: 45px">
+						<b>Rechercher un RDV</b>
+					</button>
+				</div>
+		</a></li>
+</nav>
+</head>
+<body>
+	<br>
+	<div class="container" style="overflow-x: auto;">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Date</th>
+					<th>Heure</th>
+					<th><button type="button" class="btn btn-primary">
+							<i class="far fa-calendar-alt"></i>
+						</button></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>25/03/2019</td>
+					<td>14:00</td>
+					<td><input type="radio" name="rdv"></td>
+				</tr>
+				<tr>
+					<td>27/03/2019</td>
+					<td>15:00</td>
+					<td><input type="radio" name="rdv"></td>
+				</tr>
+				<tr>
+					<td>30/03/2019</td>
+					<td>16:30</td>
+					<td><input type="radio" name="rdv"></td>
+				</tr>
+				<tr>
+					<td>02/04/2019</td>
+					<td>11:00</td>
+					<td><input type="radio" name="rdv"></td>
+				</tr>
+			</tbody>
+		</table>
+		<input type="checkbox" name="principal" checked> Je prends le
+		RDV pour le patient principal.<br> <br>
+		<div class="dropdown">
+			Patient concerné :
+			<button class="btn btn-default dropdown-toggle" type="button"
+				id="menu1" data-toggle="dropdown">
+				Mes patients <span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+				<li role="presentation"><a role="menuitem" tabindex="-1"
+					href="#">Romain</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1"
+					href="#">Louis</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1"
+					href="#">Julien</a></li>
+				<li role="presentation" class="divider"></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1"
+					href="#">Gégé</a></li>
+			</ul>
+		</div>
+		<br>
+
+		<table class="table table-striped">
+			<tr>
+				<td>
+					<div>
+						Nom :<br> <input type="text" name="nom" /><br>
+					</div> <br>
+					<div>
+						Prénom :<br> <input type="text" name="prenom" /><br>
+					</div> <br>
+					<div>
+						Age :<br> <input type="text" name="adresse" /><br>
+					</div> <br>
+					<div>
+						Mail :<br> <input type="text" name="adresse" /><br>
+					</div> <br>
+					<div>
+						Téléphone :<br> <input type="text" name="adresse" /><br>
+					</div> <br>
+					<div>
+						Numéro de Carte Vitale :<br> <input type="text"
+							name="adresse" /><br>
+					</div> <br>
+					<div>
+						Rue :<br> <input type="text" name="adresse" /><br>
+					</div> <br>
+					<div>
+						Code Postal :<br> <input type="text" name="adresse" /><br>
+					</div> <br>
+					<div>
+						Ville :<br> <input type="text" name="adresse" /><br>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<div align="right">
+			<button type="button" class="btn btn-outline-success">
+				<i class="fas fa-check-circle"></i> Valider mon RDV
+			</button>
+			<button type="button" class="btn btn-outline-danger">
+				<i class="fas fa-window-close"></i> Annuler
+			</button>
+		</div>
+	</div>
+</body>
+</html>
